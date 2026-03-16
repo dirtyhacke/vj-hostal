@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    
+    <!-- === PRIMARY META TAGS === -->
+    <title>VJ GENTS HOSTEL | Premium Men's Hostel in Kakkanad, Kochi 2026</title>
+    <meta name="description" content="VJ Gents Hostel in Kakkanad: clean, secure, student-focused. Managed by Mr. Jagadeesh. 3/6/8 share rooms, free parking, washing machine, home food. Near Infopark, bus stop & hospital.">
+    <meta name="keywords" content="men's hostel Kakkanad, VJ Gents, hostel near Infopark, student hostel Kochi, budget hostel, paid parking, washing machine, Olimugal Masjid">
+    <meta name="author" content="Jagadeesh">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.vjgentshostel.com/">
+
+    <!-- === OPEN GRAPH / FACEBOOK === -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vjgentshostel.com/">
+    <meta property="og:title" content="VJ GENTS HOSTEL – Kakkanad's Premium Men's Hostel">
+    <meta property="og:description" content="Clean, secure & student-focused. 3/6/8 share rooms, free parking, washing machine, home food. Managed by Jagadeesh.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- === TWITTER CARD === -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VJ GENTS HOSTEL – Kakkanad">
+    <meta name="twitter:description" content="Premium men's hostel near Infopark. Call +91 9746493634">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- === FAVICON (optional placeholder) === -->
+    <link rel="icon" type="image/x-icon" href="https://www.vjgentshostel.com/favicon.ico">
+
+    <!-- === STRUCTURED DATA (JSON-LD) – LocalBusiness === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hostel",
+      "name": "VJ GENTS HOSTEL",
+      "description": "Premium men's hostel in Kakkanad, Kochi. 3/6/8 share rooms, free parking, washing machine, home food.",
+      "url": "https://www.vjgentshostel.com",
+      "telephone": "+919746493634",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Kakkanad",
+        "addressRegion": "Kerala",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "10.0250522",
+        "longitude": "76.3415997"
+      },
+      "openingHours": "Mo-Su 06:00-22:00",
+      "priceRange": "₹₹",
+      "image": "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=1200&q=80",
+      "sameAs": [
+        "https://wa.me/919746493634"
+      ]
+    }
+    </script>
+
+    <!-- === STYLES & FONTS === -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* NEUMORPHISM THEME — soft, extruded UI, fully responsive */
+        :root {
+            --bg-neumorph: #eef0f4;
+            --card-neumorph: #eef0f4;
+            --text-dark: #1e1e2a;
+            --text-muted: #4a4a5a;
+            --shadow-light: #ffffff;
+            --shadow-dark: #c8cbd0;
+        }
+        body {
+            background-color: var(--bg-neumorph);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+        .card-white {
+            background: var(--card-neumorph);
+            border: none;
+            border-radius: 32px;
+            box-shadow: 12px 12px 24px var(--shadow-dark),
+                       -12px -12px 24px var(--shadow-light);
+            transition: all 0.25s ease;
+        }
+        .card-white:hover {
+            box-shadow: 16px 16px 32px var(--shadow-dark),
+                       -16px -16px 32px var(--shadow-light);
+            transform: translateY(-2px);
+        }
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s cubic-bezier(0.2, 0.9, 0.3, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .sticky-action {
+            position: fixed;
+            bottom: 1.5rem;
+            right: 1rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            z-index: 100;
+        }
+        .action-btn {
+            width: 56px;
+            height: 56px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.2s ease;
+            background: var(--bg-neumorph);
+            border: none;
+            color: var(--text-dark);
+            box-shadow: 8px 8px 16px var(--shadow-dark),
+                       -8px -8px 16px var(--shadow-light);
+        }
+        .action-btn:hover {
+            box-shadow: 12px 12px 24px var(--shadow-dark),
+                       -12px -12px 24px var(--shadow-light);
+            transform: scale(1.05);
+        }
+        .hero-image {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(100%) contrast(1.02);
+            opacity: 0.1;
+            z-index: -2;
+        }
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(238,240,244,0.98) 0%, rgba(238,240,244,0.9) 70%, rgba(238,240,244,0.98) 100%);
+            z-index: -1;
+        }
+        .img-mask {
+            border-radius: 32px;
+            overflow: hidden;
+            filter: grayscale(100%);
+            box-shadow: 12px 12px 24px var(--shadow-dark),
+                       -12px -12px 24px var(--shadow-light);
+        }
+        .img-mask img {
+            transition: transform 0.8s ease;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .img-mask:hover img { transform: scale(1.02); }
+        hr { border-color: #d0d3d8; }
+        .map-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 28px;
+            box-shadow: 12px 12px 24px var(--shadow-dark),
+                       -12px -12px 24px var(--shadow-light);
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            filter: grayscale(100%);
+        }
+        nav {
+            background: rgba(238,240,244,0.85);
+            backdrop-filter: blur(10px);
+            border-bottom: none !important;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.05), 0 -2px 4px rgba(255,255,255,0.7);
+        }
+        .btn-neumorph {
+            background: var(--bg-neumorph);
+            border: none;
+            border-radius: 18px;
+            padding: 0.75rem 1.5rem;
+            font-weight: bold;
+            color: var(--text-dark);
+            box-shadow: 8px 8px 16px var(--shadow-dark),
+                       -8px -8px 16px var(--shadow-light);
+            transition: all 0.15s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-neumorph:hover {
+            box-shadow: 12px 12px 24px var(--shadow-dark),
+                       -12px -12px 24px var(--shadow-light);
+            transform: translateY(-2px);
+        }
+        @media (max-width: 640px) {
+            h1.text-6xl { font-size: 3rem; }
+            .container.px-6 { padding-left: 1rem; padding-right: 1rem; }
+            .space-y-40 > :not([hidden]) ~ :not([hidden]) { margin-top: 6rem; }
+        }
+        .mobile-menu {
+            position: fixed;
+            top: 72px;
+            left: 0;
+            right: 0;
+            background: rgba(238,240,244,0.98);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem;
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            box-shadow: 0 12px 24px rgba(0,0,0,0.1);
+            transform: translateY(-100%);
+            transition: transform 0.3s ease;
+            z-index: 40;
+        }
+        .mobile-menu.open {
+            transform: translateY(0);
+        }
+        .mobile-menu a {
+            display: block;
+            padding: 0.75rem 0;
+            font-weight: 500;
+            border-bottom: 1px solid #d0d3d8;
+            text-align: center;
+        }
+        .mobile-menu a:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="bg-[#eef0f4] antialiased">
+
+    <!-- Sticky Actions -->
+    <div class="sticky-action">
+        <a href="https://wa.me/919746493634?text=I%20want%20room" class="action-btn" title="WhatsApp: I want room" aria-label="WhatsApp">
+            <i data-lucide="message-circle" class="w-7 h-7"></i>
+        </a>
+        <a href="tel:+919746493634" class="action-btn" title="Call Manager" aria-label="Call">
+            <i data-lucide="phone" class="w-7 h-7"></i>
+        </a>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 py-4 px-4 md:px-6 rounded-none">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="font-extrabold text-xl md:text-2xl tracking-tight flex items-center gap-2">
+                <span class="w-8 h-8 bg-[#eef0f4] text-black flex items-center justify-center text-sm font-black rounded shadow-[4px_4px_8px_#c8cbd0,-4px_-4px_8px_#ffffff]" aria-hidden="true">VJ</span>
+                <span class="text-black">GENTS</span><span class="text-neutral-500 ml-1 text-sm md:text-base">HOSTEL</span>
+            </div>
+            <!-- Desktop menu -->
+            <div class="hidden md:flex gap-6 lg:gap-8 text-sm font-medium text-neutral-700">
+                <a href="#about" class="hover:text-black transition">ABOUT</a>
+                <a href="#rooms" class="hover:text-black transition">ROOMS</a>
+                <a href="#food" class="hover:text-black transition">FOOD</a>
+                <a href="#amenities" class="hover:text-black transition">AMENITIES</a>
+                <a href="#contact" class="hover:text-black transition">CONTACT</a>
+                <a href="#how-to-reach" class="hover:text-black transition">DIRECTIONS</a>
+            </div>
+            <button id="menuToggle" class="md:hidden text-black focus:outline-none" aria-label="Menu">
+                <i id="menuIcon" data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile menu panel -->
+        <div id="mobileMenu" class="mobile-menu md:hidden">
+            <a href="#about" onclick="toggleMenu()">ABOUT</a>
+            <a href="#rooms" onclick="toggleMenu()">ROOMS</a>
+            <a href="#food" onclick="toggleMenu()">FOOD</a>
+            <a href="#amenities" onclick="toggleMenu()">AMENITIES</a>
+            <a href="#contact" onclick="toggleMenu()">CONTACT</a>
+            <a href="#how-to-reach" onclick="toggleMenu()">DIRECTIONS</a>
+        </div>
+    </nav>
+
+    <!-- HERO Section -->
+    <section class="relative min-h-screen flex flex-col justify-center items-center text-center px-4 pt-32 pb-16 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&w=2070&q=80" alt="Modern hostel building exterior – VJ Gents Hostel Kakkanad" class="hero-image" loading="eager">
+        <div class="hero-overlay"></div>
+        
+        <span class="px-4 py-1.5 rounded-full bg-[#eef0f4] text-xs font-medium tracking-[0.2em] text-neutral-600 mb-5 reveal shadow-[6px_6px_12px_#c8cbd0,-6px_-6px_12px_#ffffff]">EST. 2026 · KAKKANAD</span>
+        <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-4 tracking-tight reveal text-black leading-tight">LIVE WITH<br><span class="text-neutral-500">PURPOSE</span></h1>
+        <p class="text-base sm:text-lg md:text-xl text-neutral-700 max-w-2xl mb-8 reveal leading-relaxed px-2">
+            VJ Gents Hostel — clean, secure, and student-focused. Managed by <span class="text-black font-semibold underline decoration-black underline-offset-4">Mr. Jagadeesh</span>. 
+            All rooms include fan, bed, pillow. Washing machine available. Car & bike parking.
+        </p>
+        <div class="flex flex-wrap justify-center gap-3 reveal">
+            <a href="#rooms" class="btn-neumorph px-6 py-3 text-sm sm:text-base">VIEW ROOMS</a>
+            <a href="tel:+919746493634" class="btn-neumorph px-6 py-3 text-sm sm:text-base">CALL OWNER</a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-4 md:px-6 space-y-32 md:space-y-40 pb-32">
+        <!-- ABOUT -->
+        <section id="about" class="reveal grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            <div class="img-mask shadow-md order-2 lg:order-1">
+                <img src="./assets/hostal.jpeg" alt="Spacious and clean dormitory room at VJ Gents Hostel" loading="lazy">
+            </div>
+            <div class="space-y-5 order-1 lg:order-2">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-black leading-tight text-black">IDEAL FOR <span class="text-neutral-500">STUDENTS</span><br>& PROFESSIONALS</h2>
+                <p class="text-neutral-700 text-base sm:text-lg leading-relaxed">
+                    Located in Kakkanad, we offer quiet, secure stays. Free car & bike parking. Washing machine (normal wash) available for all residents. 
+                    Every room comes with fan, comfortable bed, and pillow — absolutely free.
+                </p>
+                <div class="grid grid-cols-2 gap-4 pt-4">
+                    <div class="p-5 card-white border-l-4 border-l-black" style="border-left-color: #1e1e2a;">
+                        <h3 class="font-bold text-xl sm:text-2xl text-black mb-1">PARKING</h3>
+                        <p class="text-xs sm:text-sm text-neutral-600">car & bike, free</p>
+                    </div>
+                    <div class="p-5 card-white border-l-4 border-l-neutral-400" style="border-left-color: #8f8f9f;">
+                        <h3 class="font-bold text-xl sm:text-2xl text-black mb-1">WASHING</h3>
+                        <p class="text-xs sm:text-sm text-neutral-600">machine (normal)</p>
+                    </div>
+                </div>
+                <div class="pt-4 flex flex-wrap gap-x-6 gap-y-2 text-xs sm:text-sm text-neutral-600">
+                    <span>🚉 Railway 15min</span>
+                    <span>🚇 Metro 2km</span>
+                    <span>✈️ Airport 35min</span>
+                    <span>🚌 Bus stop 300m</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ROOMS -->
+        <section id="rooms" class="reveal">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black mb-3 text-black">ROOM <span class="text-neutral-500">TYPES</span></h2>
+                <p class="text-neutral-600 text-sm sm:text-base">Choose your sharing preference · fan, bed, pillow included</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- 3 share -->
+                <div class="card-white p-6 sm:p-8 flex flex-col">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-[#e4e7ec] rounded-2xl flex items-center justify-center mb-5 shadow-[inset_4px_4px_8px_#c8cbd0,inset_-4px_-4px_8px_#ffffff]">
+                        <i data-lucide="users" class="w-6 h-6 sm:w-8 sm:h-8 text-black" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-xl sm:text-2xl mb-2 text-black">3‑SHARE ROOM</h3>
+                    <p class="text-neutral-600 text-xs sm:text-sm mb-4">Spacious, well‑ventilated. Each bed with storage, fan, light.</p>
+                    <div class="mt-auto pt-4 flex gap-2">
+                        <a href="tel:+919746493634" class="flex-1 py-2 sm:py-3 btn-neumorph text-xs sm:text-sm flex items-center justify-center gap-1"><i data-lucide="phone" class="w-3 h-3 sm:w-4 sm:h-4"></i> Call</a>
+                        <a href="https://wa.me/919746493634?text=I%20want%20room%20(3-share)" class="flex-1 py-2 sm:py-3 btn-neumorph text-xs sm:text-sm flex items-center justify-center gap-1"><i data-lucide="message-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i> WhatsApp</a>
+                    </div>
+                </div>
+                <!-- 6 share -->
+                <div class="card-white p-6 sm:p-8 flex flex-col">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-[#e4e7ec] rounded-2xl flex items-center justify-center mb-5 shadow-[inset_4px_4px_8px_#c8cbd0,inset_-4px_-4px_8px_#ffffff]">
+                        <i data-lucide="users" class="w-6 h-6 sm:w-8 sm:h-8 text-black" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-xl sm:text-2xl mb-2 text-black">6‑SHARE ROOM</h3>
+                    <p class="text-neutral-600 text-xs sm:text-sm mb-4">Economical, personal lockers, dedicated study area.</p>
+                    <div class="mt-auto pt-4 flex gap-2">
+                        <a href="tel:+919746493634" class="flex-1 py-2 sm:py-3 btn-neumorph text-xs sm:text-sm flex items-center justify-center gap-1"><i data-lucide="phone" class="w-3 h-3 sm:w-4 sm:h-4"></i> Call</a>
+                        <a href="https://wa.me/919746493634?text=I%20want%20room%20(6-share)" class="flex-1 py-2 sm:py-3 btn-neumorph text-xs sm:text-sm flex items-center justify-center gap-1"><i data-lucide="message-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i> WhatsApp</a>
+                    </div>
+                </div>
+                <!-- 8 share -->
+                <div class="card-white p-6 sm:p-8 flex flex-col">
+                    <div class="w-12 h-12 sm:w-14 sm:h-14 bg-[#e4e7ec] rounded-2xl flex items-center justify-center mb-5 shadow-[inset_4px_4px_8px_#c8cbd0,inset_-4px_-4px_8px_#ffffff]">
+                        <i data-lucide="users" class="w-6 h-6 sm:w-8 sm:h-8 text-black" aria-hidden="true"></i>
+                    </div>
+                    <h3 class="font-bold text-xl sm:text-2xl mb-2 text-black">8‑SHARE ROOM</h3>
+                    <p class="text-neutral-600 text-xs sm:text-sm mb-4">Best value, ample storage, 24/7 fan & light.</p>
+                    <div class="mt-auto pt-4 flex gap-2">
+                        <a href="tel:+919746493634" class="flex-1 py-2 sm:py-3 btn-neumorph text-xs sm:text-sm flex items-center justify-center gap-1"><i data-lucide="phone" class="w-3 h-3 sm:w-4 sm:h-4"></i> Call</a>
+                        <a href="https://wa.me/919746493634?text=I%20want%20room%20(8-share)" class="flex-1 py-2 sm:py-3 btn-neumorph text-xs sm:text-sm flex items-center justify-center gap-1"><i data-lucide="message-circle" class="w-3 h-3 sm:w-4 sm:h-4"></i> WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- AMENITIES -->
+        <section id="amenities" class="reveal">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-black mb-3 text-black">AMENITIES & <span class="text-neutral-500">CONNECTIVITY</span></h2>
+                <p class="text-neutral-600 text-sm sm:text-base">Everything you need, right here</p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="car" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Free parking</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">car & bike</p>
+                </div>
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="washing-machine" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Washing machine</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">normal wash</p>
+                </div>
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="shopping-bag" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Shops nearby</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">grocery, medical</p>
+                </div>
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="navigation" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Uber / Ola</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">24/7</p>
+                </div>
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="bus" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Bus stop</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">300m away</p>
+                </div>
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="train" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Railway & Metro</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">15min · 2km</p>
+                </div>
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="plane" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Airport</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">35 min</p>
+                </div>
+                <div class="card-white p-5 sm:p-8 text-center">
+                    <i data-lucide="utensils" class="w-8 h-8 sm:w-10 sm:h-10 text-black mx-auto mb-3" aria-hidden="true"></i>
+                    <h3 class="font-bold text-sm sm:text-lg">Home food</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500">veg & non-veg</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOD -->
+        <section id="food" class="reveal">
+            <h2 class="text-3xl sm:text-4xl font-black mb-10 text-center text-black">NUTRITION <span class="text-neutral-500">& TASTE</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Breakfast -->
+                <div class="card-white overflow-hidden">
+                    <div class="h-40 sm:h-48 overflow-hidden bg-[#e4e7ec]">
+                        <img src="./assets/appam.avif" class="w-full h-full object-cover grayscale" alt="South Indian breakfast – Dosa, Idli, Puttu served at VJ Gents" loading="lazy">
+                    </div>
+                    <div class="p-5 sm:p-8">
+                        <span class="px-3 py-1 bg-[#e4e7ec] text-black text-xs font-bold rounded-lg uppercase tracking-wider shadow-[inset_2px_2px_4px_#c8cbd0,inset_-2px_-2px_4px_#ffffff] inline-block">BREAKFAST</span>
+                        <ul class="mt-4 space-y-2 text-neutral-700 text-sm">
+                            <li class="flex justify-between border-b border-[#d0d3d8] pb-1">Dosa / Idli <i data-lucide="check" class="text-black w-4 h-4" aria-hidden="true"></i></li>
+                            <li class="flex justify-between border-b border-[#d0d3d8] pb-1">Puttu / Kadala <i data-lucide="check" class="text-black w-4 h-4" aria-hidden="true"></i></li>
+                            <li class="flex justify-between">Kerala Chaya <i data-lucide="check" class="text-black w-4 h-4" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lunch/Dinner -->
+                <div class="card-white overflow-hidden">
+                    <div class="h-40 sm:h-48 overflow-hidden bg-[#e4e7ec]">
+                        <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?auto=format&fit=crop&w=800&q=80" class="w-full h-full object-cover grayscale" alt="Kerala meals – fish curry, rice, vegetables" loading="lazy">
+                    </div>
+                    <div class="p-5 sm:p-8">
+                        <span class="px-3 py-1 bg-[#e4e7ec] text-black text-xs font-bold rounded-lg uppercase tracking-wider shadow-[inset_2px_2px_4px_#c8cbd0,inset_-2px_-2px_4px_#ffffff] inline-block">LUNCH / DINNER</span>
+                        <ul class="mt-4 space-y-2 text-neutral-700 text-sm">
+                            <li class="flex justify-between border-b border-[#d0d3d8] pb-1">Kerala meals <i data-lucide="check" class="text-black w-4 h-4" aria-hidden="true"></i></li>
+                            <li class="flex justify-between border-b border-[#d0d3d8] pb-1">Fish curry / fry <i data-lucide="check" class="text-black w-4 h-4" aria-hidden="true"></i></li>
+                            <li class="flex justify-between">Chicken curry <i data-lucide="check" class="text-black w-4 h-4" aria-hidden="true"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sunday special -->
+                <div class="card-white overflow-hidden border-2" style="border-color: #b0b3b8;">
+                    <div class="h-40 sm:h-48 overflow-hidden bg-[#e4e7ec] relative">
+                        <img src="./assets/biriyani.avif" class="w-full h-full object-cover grayscale" alt="Special Sunday biriyani at VJ Gents Hostel" loading="lazy">
+                        <div class="absolute inset-0 bg-gradient-to-t from-[#eef0f4] via-transparent to-transparent flex items-end p-4 sm:p-6">
+                            <span class="text-black font-black text-xl sm:text-2xl italic">SUNDAY FEAST</span>
+                        </div>
+                    </div>
+                    <div class="p-5 sm:p-8">
+                        <h3 class="text-xl sm:text-2xl font-bold mb-2 text-black">Chicken Biriyani</h3>
+                        <p class="text-neutral-600 text-xs sm:text-sm leading-relaxed">Signature Malabar style, with raita & boiled egg — the weekly highlight.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="reveal">
+            <h2 class="text-3xl sm:text-4xl font-black mb-3 text-center text-black">RESIDENT <span class="text-neutral-500">STORIES</span></h2>
+            <p class="text-neutral-600 text-center mb-12 text-sm sm:text-base">What people say about living at VJ Gents</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-10">
+                <div class="card-white p-6 sm:p-10 relative">
+                    <i data-lucide="quote" class="w-8 h-8 sm:w-10 sm:h-10 text-neutral-500 mb-3" aria-hidden="true"></i>
+                    <p class="text-base sm:text-lg italic text-neutral-700">"Cleanest hostel I've stayed in Kochi. Jagadeesh sir is always available, and the food feels like home. Parking is a big plus."</p>
+                    <div class="mt-5 flex items-center gap-3">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#e4e7ec] flex items-center justify-center text-black font-bold shadow-[inset_3px_3px_6px_#c8cbd0,inset_-3px_-3px_6px_#ffffff]">A</div>
+                        <div><span class="block font-bold text-black text-sm sm:text-base">Adarsh K.</span><span class="text-xs sm:text-sm text-neutral-500">techie, Infopark</span></div>
+                    </div>
+                </div>
+                <div class="card-white p-6 sm:p-10 relative">
+                    <i data-lucide="quote" class="w-8 h-8 sm:w-10 sm:h-10 text-neutral-500 mb-3" aria-hidden="true"></i>
+                    <p class="text-base sm:text-lg italic text-neutral-700">"Perfect for students — quiet study environment, free washing machine, and they have parking for my bike. Very convenient."</p>
+                    <div class="mt-5 flex items-center gap-3">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#e4e7ec] flex items-center justify-center text-black font-bold shadow-[inset_3px_3px_6px_#c8cbd0,inset_-3px_-3px_6px_#ffffff]">S</div>
+                        <div><span class="block font-bold text-black text-sm sm:text-base">Sreeraj P.</span><span class="text-xs sm:text-sm text-neutral-500">bank aspirant</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- MANAGER INFO -->
+        <section class="reveal grid lg:grid-cols-2 gap-10 items-center">
+            <div class="space-y-5">
+                <h2 class="text-3xl sm:text-4xl font-black leading-tight text-black">HOSTEL MANAGED BY <span class="text-neutral-500 block text-4xl sm:text-5xl">JAGADEESH</span></h2>
+                <p class="text-neutral-700 text-base sm:text-lg">With over a decade of experience, Jagadeesh ensures a safe, student-friendly environment. He lives on-site and personally oversees parking, security, and resident comfort.</p>
+                <div class="flex gap-6 pt-3">
+                    <div><span class="block text-2xl sm:text-3xl font-black text-black">10+</span><span class="text-neutral-500 text-xs sm:text-sm">years exp</span></div>
+                    <div><span class="block text-2xl sm:text-3xl font-black text-black">32</span><span class="text-neutral-500 text-xs sm:text-sm">beds</span></div>
+                    <div><span class="block text-2xl sm:text-3xl font-black text-black">24/7</span><span class="text-neutral-500 text-xs sm:text-sm">on-site</span></div>
+                </div>
+            </div>
+            <div class="card-white p-8 sm:p-12 text-center">
+                <i data-lucide="user" class="w-12 h-12 sm:w-16 sm:h-16 text-black mx-auto mb-4 stroke-1" aria-hidden="true"></i>
+                <h3 class="text-xl sm:text-2xl font-bold text-black">Jagadeesh</h3>
+                <p class="text-neutral-500 text-sm sm:text-base">Owner & On-site Manager</p>
+                <hr class="my-5 w-20 mx-auto border-[#d0d3d8]">
+                <p class="text-xs sm:text-sm text-neutral-600">Direct line: <a href="tel:+919746493634" class="font-bold text-black">+91 97464 93634</a></p>
+                <p class="text-xs sm:text-sm text-neutral-500 mt-2">Available 6am – 10pm</p>
+            </div>
+        </section>
+
+        <!-- NEARBY -->
+        <section class="reveal">
+            <h2 class="text-2xl sm:text-3xl font-black mb-8 text-black">NEARBY <span class="text-neutral-500">PLACES</span></h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                <a href="#" class="card-white p-6 sm:p-8 block group">
+                    <i data-lucide="bus" class="w-6 h-6 sm:w-8 sm:h-8 text-black mb-3" aria-hidden="true"></i>
+                    <h3 class="text-lg sm:text-xl font-bold group-hover:text-neutral-700 text-black">Bus stop</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500 mt-1">300m · frequent to Infopark, city</p>
+                </a>
+                <a href="#" class="card-white p-6 sm:p-8 block group">
+                    <i data-lucide="store" class="w-6 h-6 sm:w-8 sm:h-8 text-black mb-3" aria-hidden="true"></i>
+                    <h3 class="text-lg sm:text-xl font-bold group-hover:text-neutral-700 text-black">Grand Hayal</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500 mt-1">Mandhi, Shawarma, 5min walk</p>
+                </a>
+                <a href="#" class="card-white p-6 sm:p-8 block group">
+                    <i data-lucide="hospital" class="w-6 h-6 sm:w-8 sm:h-8 text-black mb-3" aria-hidden="true"></i>
+                    <h3 class="text-lg sm:text-xl font-bold group-hover:text-neutral-700 text-black">Co-operative Hospital</h3>
+                    <p class="text-xs sm:text-sm text-neutral-500 mt-1">24/7 emergency, 1.2km</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="reveal grid lg:grid-cols-5 gap-6 lg:gap-8">
+            <div class="lg:col-span-2 card-white p-6 sm:p-10 flex flex-col justify-between space-y-6">
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-black mb-3 text-black">CONTACT <span class="text-neutral-500">MANAGER</span></h2>
+                    <p class="text-neutral-600 text-sm sm:text-base">Direct line to Mr. Jagadeesh — quick response.</p>
+                </div>
+                <div class="space-y-6">
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#e4e7ec] rounded-2xl flex items-center justify-center shadow-[inset_4px_4px_8px_#c8cbd0,inset_-4px_-4px_8px_#ffffff]"><i data-lucide="phone-call" class="w-5 h-5 sm:w-6 sm:h-6 text-black"></i></div>
+                        <div><span class="text-[10px] sm:text-xs uppercase text-neutral-500 font-bold">Call</span><a href="tel:+919746493634" class="text-xl sm:text-2xl font-bold block text-black hover:text-neutral-700">+91 97464 93634</a></div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="w-10 h-10 sm:w-12 sm:h-12 bg-[#e4e7ec] rounded-2xl flex items-center justify-center shadow-[inset_4px_4px_8px_#c8cbd0,inset_-4px_-4px_8px_#ffffff]"><i data-lucide="map-pin" class="w-5 h-5 sm:w-6 sm:h-6 text-black"></i></div>
+                        <div><span class="text-[10px] sm:text-xs uppercase text-neutral-500 font-bold">Address</span><span class="text-base sm:text-xl block text-black">Kakkanad, Kochi</span></div>
+                    </div>
+                </div>
+                <a href="https://wa.me/919746493634?text=I%20want%20room" class="w-full py-3 sm:py-4 btn-neumorph flex items-center justify-center gap-2 text-sm sm:text-base">WHATSAPP (I want room)</a>
+            </div>
+            <div class="lg:col-span-3 rounded-[32px] overflow-hidden shadow-[12px_12px_24px_#c8cbd0,-12px_-12px_24px_#ffffff] h-64 sm:h-80 lg:h-auto">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5079.945685999258!2d76.3415997!3d10.0250522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d94710aff77%3A0x2f47d3142a36a746!2sVJ%20gents%20hostel%20kakkanad!5e1!3m2!1sen!2sin!4v1773676275310!5m2!1sen!2sin" class="w-full h-full grayscale contrast-100" loading="lazy" title="Google Map location of VJ Gents Hostel"></iframe>
+            </div>
+        </section>
+
+        <!-- HOW TO REACH -->
+        <section id="how-to-reach" class="reveal">
+            <h2 class="text-3xl sm:text-4xl font-black mb-4 text-black">HOW TO REACH <span class="text-neutral-500">VJ GENTS</span></h2>
+            <p class="text-neutral-700 text-base sm:text-lg mb-6 max-w-3xl">From <strong>Ernakulam Junction (South)</strong> — two convenient bus routes:</p>
+            
+            <div class="grid sm:grid-cols-2 gap-6">
+                <div class="card-white p-6 sm:p-8">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 flex items-center gap-2"><i data-lucide="bus" class="w-5 h-5 sm:w-6 sm:h-6"></i> Route A (via Kaloor)</h3>
+                    <ul class="space-y-2 text-neutral-700 text-sm sm:text-base list-disc pl-5">
+                        <li>Walk from Ernakulam Junction to <strong>KSRTC Bus Stand</strong>.</li>
+                        <li>Take a bus to <strong>Kaloor</strong>.</li>
+                        <li>From Kaloor, board a bus to <strong>Olimugal Masjid</strong>.</li>
+                        <li>Hostel is near the masjid.</li>
+                    </ul>
+                </div>
+                <div class="card-white p-6 sm:p-8">
+                    <h3 class="text-xl sm:text-2xl font-bold mb-3 flex items-center gap-2"><i data-lucide="bus" class="w-5 h-5 sm:w-6 sm:h-6"></i> Route B (direct)</h3>
+                    <ul class="space-y-2 text-neutral-700 text-sm sm:text-base list-disc pl-5">
+                        <li>From Ernakulam Junction, walk to <strong>South Ernakulam</strong> bus stop.</li>
+                        <li>Direct bus to <strong>Olimugal Masjid</strong> (approx. 25 min).</li>
+                        <li>Hostel is steps from the masjid.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Four maps -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-10">
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5079.975558403514!2d76.33785727608358!3d10.023136572634034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c5e271aa683%3A0x6d2ad4a17b8fab47!2sOlimugal%20Masjid!5e1!3m2!1sen!2sin!4v1773679603440!5m2!1sen!2sin" loading="lazy" title="Map of Olimugal Masjid landmark"></iframe>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5080.812789584671!2d76.28629778603617!3d9.969577148134894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0872b4498c107f%3A0x2da22b212ba9d071!2sErnakulam%20Junction!5e1!3m2!1sen!2sin!4v1773679629709!5m2!1sen!2sin" loading="lazy" title="Map of Ernakulam Junction railway station"></iframe>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10161.625385068508!2d76.28372283766096!3d9.9695929491406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d4e29437e1b%3A0x281249e80d0aad77!2sKSRTC%20BUS%20STATION%20ERNAKULAM!5e1!3m2!1sen!2sin!4v1773679673481!5m2!1sen!2sin" loading="lazy" title="Map of KSRTC bus station Ernakulam"></iframe>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20321.88064453921!2d76.27684287518653!3d9.991534066553081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080d13ee1347b1%3A0x89c9267d1aeeaac4!2sKaloor%2C%20Kochi%2C%20Ernakulam%2C%20Kerala!5e1!3m2!1sen!2sin!4v1773679727728!5m2!1sen!2sin" loading="lazy" title="Map of Kaloor area"></iframe>
+                </div>
+            </div>
+            <p class="text-xs sm:text-sm text-neutral-500 mt-4 text-center">📍 Olimugal Masjid is the landmark — hostel is adjacent.</p>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="py-12 border-t border-[#d0d3d8] text-center">
+        <div class="max-w-xl mx-auto px-4 space-y-6">
+            <div class="font-black text-xl sm:text-2xl tracking-tight text-neutral-500">VJ <span class="text-black">GENTS</span></div>
+            <p class="text-neutral-500 text-xs sm:text-sm">Managed by Jagadeesh · student-friendly · Kakkanad 2026</p>
+            <div class="pt-4 border-t border-[#d0d3d8] flex flex-col items-center gap-3">
+                <p class="text-[9px] sm:text-[10px] uppercase tracking-[0.2em] text-neutral-400 font-bold">DESIGN & DEV</p>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/91890053568" class="w-9 h-9 sm:w-10 sm:h-10 bg-[#eef0f4] rounded-xl flex items-center justify-center hover:bg-[#e4e7ec] transition shadow-[6px_6px_12px_#c8cbd0,-6px_-6px_12px_#ffffff]" title="WhatsApp Developer" aria-label="WhatsApp Developer">
+                        <i data-lucide="message-circle" class="w-4 h-4 sm:w-5 sm:h-5 text-black"></i>
+                    </a>
+                    <a href="mailto:swarajcn774@gmail.com" class="w-9 h-9 sm:w-10 sm:h-10 bg-[#eef0f4] rounded-xl flex items-center justify-center hover:bg-[#e4e7ec] transition shadow-[6px_6px_12px_#c8cbd0,-6px_-6px_12px_#ffffff]" title="Email Developer" aria-label="Email Developer">
+                        <i data-lucide="mail" class="w-4 h-4 sm:w-5 sm:h-5 text-black"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="text-[9px] sm:text-xs uppercase tracking-[0.2em] text-neutral-400 font-bold">© 2026 VJ HOSTEL KOCHI</div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+
+        window.toggleMenu = function() {
+            mobileMenu.classList.toggle('open');
+            if (mobileMenu.classList.contains('open')) {
+                menuIcon.setAttribute('data-lucide', 'x');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            }
+            lucide.createIcons();
+        };
+
+        menuToggle.addEventListener('click', toggleMenu);
+
+        // Reveal on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => e.isIntersecting && e.target.classList.add('active'));
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
